@@ -7,7 +7,6 @@ namespace AuthService.Application.Services
         public static string GenerateEmailVerificationToken()
         {
             return GenerateSecureToken(32);
-
         }
 
         public static string GeneratePasswordResetToken()
@@ -22,8 +21,7 @@ namespace AuthService.Application.Services
             rng.GetBytes(bytes);
             return Convert.ToBase64String(bytes).Replace("+", "")
                                               .Replace("/", "")
-                                              .Replace("=", "");
-
+                                              .Replace("=", "");s
         }
     }
 }
