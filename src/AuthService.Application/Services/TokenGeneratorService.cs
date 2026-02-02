@@ -21,7 +21,7 @@ namespace AuthService.Application.Services
             rng.GetBytes(bytes);
             return Convert.ToBase64String(bytes).Replace("+", "")
                                               .Replace("/", "")
-                                              .Replace("=", "");s
+                                              .Replace("=", "");
         }
     }
 }

@@ -4,7 +4,7 @@ using AuthService.Api.Models;
 using AuthService.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace AuthService.Api.Models;
+namespace AuthService.Api.ModelBinders;
 
 public class FileDataModelBinder : IModelBinder
 {
